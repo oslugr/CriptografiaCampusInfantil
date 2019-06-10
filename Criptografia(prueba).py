@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 #
 #
-#	Programa que se modifica para añadir las operaciones de encriptacion.
+#	Programa que se modifica para añadir las operaciones de encriptación.
 #	Ademas se usa para que el equipo que tenga que resolverlo.
 #
 #
@@ -11,11 +12,11 @@
 def PrimeraEncriptacion(codigo):
 
 	for i in range(0,8) :
-		letra_en_numero = ord(codigo[i])
+		letra_en_numero = ord(codigo[i])		#Se pasa la letra a numero para poder realizar la operaciones
 		letra_en_numero = letra_en_numero + 1
-		codigo[i] = chr(letra_en_numero)
+		codigo[i] = chr(letra_en_numero)		#Se devuelve el valor numerico para ponerlo como letra despues de la s operaciones
 
-	return codigo,"+1t"
+	return codigo,"+1T"					#Devulve el codigo de la operacion
 
 ##################################################################################
 
@@ -23,11 +24,11 @@ def PrimeraEncriptacion(codigo):
 def SegundaEncriptacion(codigo):
 
 	for i in range(0,8) :
-		letra_en_numero = ord(codigo[i])
+		letra_en_numero = ord(codigo[i])		#Se pasa la letra a numero para poder realizar la operaciones
 		letra_en_numero = letra_en_numero + 1
-		codigo[i] = chr(letra_en_numero)
+		codigo[i] = chr(letra_en_numero)		#Se devuelve el valor numerico para ponerlo como letra despues de la s operaciones
 
-	return codigo,"+1t"
+	return codigo,"+1T"					#Devulve el codigo de la operacion
 
 
 ##################################################################################
@@ -36,11 +37,11 @@ def SegundaEncriptacion(codigo):
 def TerceraEncriptacion(codigo):
 
 	for i in range(0,8) :
-		letra_en_numero = ord(codigo[i])
+		letra_en_numero = ord(codigo[i])		#Se pasa la letra a numero para poder realizar la operaciones
 		letra_en_numero = letra_en_numero + 1
-		codigo[i] = chr(letra_en_numero)
+		codigo[i] = chr(letra_en_numero)		#Se devuelve el valor numerico para ponerlo como letra despues de la s operaciones
 
-	return codigo,"+1t"
+	return codigo,"+1T"					#Devulve el codigo de la operacion
 
 ##################################################################################
 
@@ -48,17 +49,16 @@ def TerceraEncriptacion(codigo):
 def CuartaEncriptacion(codigo):
 
 	for i in range(0,8) :
-		letra_en_numero = ord(codigo[i])
+		letra_en_numero = ord(codigo[i])		#Se pasa la letra a numero para poder realizar la operaciones
 		letra_en_numero = letra_en_numero + 1
-		codigo[i] = chr(letra_en_numero)
+		codigo[i] = chr(letra_en_numero)		#Se devuelve el valor numerico para ponerlo como letra despues de la s operaciones
 
-	return codigo,"+1t"	
+	return codigo,"+1T"					#Devulve el codigo de la operacion	
 
 ##################################################################################
 
 
-codigo_inicial="11111111"
-
+codigo_inicial="1A2B3C4D"
 
 
 ##################################################################################
@@ -126,7 +126,6 @@ while fallo:
 		fallo=False
 	else:
 		print (f(random.randint(1,4)))
-
 
 
 
