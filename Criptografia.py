@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 #
 #
-#	Programa que se modifica para añadir las operaciones de encriptacion.
+#	Programa que se modifica para añadir las operaciones de encriptación.
 #	Ademas se usa para que el equipo que tenga que resolverlo.
 #
 #
@@ -56,7 +57,7 @@ import random
 def f(x):
 	return {
 		1:'\nJajajajaja fallastes, te voy ganando.',
-		2:'\nIntentalo de nuevo.',
+		2:'\nInténtalo de nuevo.',
 		3:'\nUhhh que pena no has acertado.',
 		4:'\nNo has acertado. :P '
 	}.get(x,0)
@@ -109,7 +110,6 @@ while fallo:
 		fallo=False
 	else:
 		print (f(random.randint(1,4)))
-
 
 
 
